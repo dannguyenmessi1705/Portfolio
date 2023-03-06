@@ -3,6 +3,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
+.slider-area .container {
+  padding-top: 50%;
+  background: url("../images/background.png") center top / cover no-repeat;
+  margin: 16px auto 50px;
+  position: relative;
+}
+.container .content-slider {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+#about {
+  margin: 50px 0;
+}
+#experiences {
+  margin: 50px 0;
+}
+#contact {
+  margin: 50px 0;
+}
+.footer-area {
+  margin: 50px 0;
+}
 .experience-area ul.nav__menu li.nav-item button.menu-item,
 .header-area .header-btn .primary-btn {
   font-size: 1.6rem;
