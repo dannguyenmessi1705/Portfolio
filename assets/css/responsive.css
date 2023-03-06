@@ -2,14 +2,14 @@
   width: 15%;
 }
 .header-area .site-wrapper a.navbar-brand {
-  font-size: 3.6rem;
+  font-size: 3rem;
   font-family: "Saira Stencil One", cursive;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 300;
   color: #03043c;
 }
 .header-area .site-wrapper a.navbar-brand span {
-  color: red;
+  color: #03043c(92, 70, 70);
 }
 .header-area nav.main-nav ul.primary-menu {
   display: flex;
@@ -19,113 +19,7 @@
   position: relative;
   padding: 0 1.5rem;
 }
-.header-area nav.main-nav ul.primary-menu li:hover.has-child-menu:after {
-  transform: rotate(-180deg);
-  color: #ffb400;
-}
-.header-area nav.main-nav ul.primary-menu li a.active {
-  color: #ffb400;
-}
-.header-area nav.main-nav ul.primary-menu li.has-child-menu::after {
-  position: absolute;
-  right: 0;
-  color: #1f2044;
-  top: 1.5rem;
-  font-family: "boxicons";
-  content: "\e9ac";
-  font-size: 1.6rem;
-  font-weight: 600;
-  transition: all 0.5s ease-in-out;
-}
-.header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li {
-  padding: 0;
-}
-.header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li a {
-  padding: 1rem 1.5rem;
-}
-.header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li a:hover {
-  background: transparent;
-  transform: translateX(10px);
-}
-.header-area .main-nav ul li .sub-menu {
-  position: absolute;
-  left: 0;
-  top: auto;
-  right: 0;
-  min-width: 200px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background: #f3f2f7;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 9999;
-  transform: translateY(20px);
-  transition: all 0.3s;
-  border-top: 3px solid #03043c;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-.header-area .main-nav ul li .sub-menu li .sub-menu {
-  right: -200px;
-  left: inherit;
-  top: 0;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-.header-area .main-nav ul li .sub-menu > li {
-  display: block;
-  margin: 0;
-  position: relative;
-}
-.header-area .main-nav ul > li a:hover {
-  background: transparent;
-  color: #03043c;
-}
-.header-area .main-nav .fl {
-  width: 30px;
-  font-size: 20px;
-  line-height: 35px;
-  text-align: center;
-  color: #fff;
-  font-style: normal;
-  position: absolute;
-  right: -5px;
-  top: 0;
-  z-index: 999;
-  display: none;
-  cursor: pointer;
-}
-.header-area .main-nav .fl:before {
-  font-size: 14px;
-  text-align: center;
-  line-height: 35px;
-}
-.header-area .main-nav > ul > li + li > .sub-menu {
-  left: 15px;
-}
-.header-area .main-nav > ul > li:hover > .sub-menu,
-.header-area .main-nav ul li .sub-menu li:hover > .sub-menu,
-.header-area .main-nav ul li .sub-menu li .sub-menu li:hover > .sub-menu {
-  transform: translateY(0);
-  visibility: visible;
-  opacity: 1;
-}
-.header-area .slideInUp {
-  visibility: hidden;
-  opacity: 0;
-  transform: translate3d(0, 30px, 0);
-  transition: all 1s ease-out;
-}
-.header-area .is-active .slideInUp {
-  visibility: visible;
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-.header-area .slideInUp2 {
-  transition-delay: 0.3s;
-}
-.header-area .header-btn {
-  margin-left: 2rem;
-}
+
 .header-area.sticky {
   position: fixed;
   top: 0;
@@ -139,106 +33,7 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
-.section-top-spacing {
-  padding-top: 14rem;
-  padding-bottom: 7rem;
-}
-.section-spacing {
-  padding: 7rem 0;
-}
-.header-area nav.main-nav ul.primary-menu li a {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  text-decoration: none;
-  font-family: "Helvetica", sans-serif;
-  transition: all 0.3s ease-in-out;
-  padding: 1.5rem 0;
-  position: relative;
-  cursor: pointer;
-}
-.header-area nav.main-nav ul.primary-menu li a:hover {
-  color: #ffb400;
-}
-.header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li a {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: normal;
-  text-transform: capitalize;
-  text-decoration: none;
-  font-family: "Helvetica", sans-serif;
-  transition: all 0.3s ease-in-out;
-  padding: 0.75rem 1.5rem;
-  position: relative;
-  cursor: pointer;
-}
-.header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li a:hover {
-  color: #ffb400;
-}
-.header-area .header-btn .primary-btn {
-  font-size: 1.6rem;
-  text-transform: capitalize;
-  font-weight: 500;
-  background: #03043c;
-  border-radius: 0.5rem;
-  transition: all 0.3s ease-in-out;
-  line-height: 1.8rem;
-  letter-spacing: normal;
-  padding: 1rem 2rem;
-}
-.header-area .header-btn .primary-btn:hover {
-  color: #ffffff;
-  background: #ffb400;
-}
-.header-top ul li a i::before {
-  font-size: 1.8rem;
-  color: #03043c;
-  background: #ffffff;
-  padding: 0.5rem;
-  border-radius: 5rem;
-  vertical-align: middle;
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
-}
-.header-top ul li a i:hover::before {
-  background-color: #fff;
-  color: #03043c;
-}
-.header-top ul.topbar-support li a i:before {
-  font-size: 2rem;
-  color: #fff;
-  background: transparent;
-  padding: 1rem;
-  margin: 0;
-}
-.header-top ul.topbar-support li a i:hover:before {
-  color: #fff;
-  background: transparent;
-}
-.animated-btn {
-  flex-direction: column;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
-.animated-btn .active {
-  transform: translateY(-0.8rem);
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-}
-.animated-btn .btn-submit {
-  position: absolute;
-  background: chocolate;
-  color: #fff;
-  font-size: 1.6rem;
-  letter-spacing: 0.1px;
-  border-radius: 0.3rem;
-  cursor: pointer;
-  transition: background 0.5s;
-  overflow: hidden;
-}
+
 .header-top {
   background: #03043c;
   padding: 1.5rem 0;
@@ -261,67 +56,11 @@
   display: flex;
   align-items: center;
 }
-.header-top ul li a {
-  font-family: Poppins;
-  font-style: normal;
-  display: flex;
-  align-items: center;
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 0.8rem;
-  color: #e5e5e5;
-}
+
 .header-top ul li:not(:last-child) {
   margin-right: 1.5rem;
 }
-.section-top-spacing {
-  padding-top: 14rem;
-  padding-bottom: 7rem;
-}
-.section-spacing {
-  padding: 7rem 0;
-}
-.header-area nav.main-nav ul.primary-menu li a {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  text-decoration: none;
-  font-family: "Helvetica", sans-serif;
-  transition: all 0.3s ease-in-out;
-  padding: 1.5rem 0;
-  position: relative;
-  cursor: pointer;
-}
-.header-area nav.main-nav ul.primary-menu li a:hover {
-  color: #ffb400;
-}
-.header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li a {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: normal;
-  text-transform: capitalize;
-  text-decoration: none;
-  font-family: "Helvetica", sans-serif;
-  transition: all 0.3s ease-in-out;
-  padding: 0.75rem 1.5rem;
-  position: relative;
-  cursor: pointer;
-}
-.header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li a:hover {
-  color: #ffb400;
-}
-.header-area .header-btn .primary-btn {
-  font-size: 1.6rem;
-  text-transform: capitalize;
-  font-weight: 500;
-  background: #03043c;
-  border-radius: 0.5rem;
-  transition: all 0.3s ease-in-out;
-  line-height: 1.8rem;
-  letter-spacing: normal;
-  padding: 1rem 2rem;
-}
+
 .header-area .header-btn .primary-btn:hover {
   color: #ffffff;
   background: #ffb400;
@@ -336,44 +75,7 @@
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
-.header-top ul li a i:hover::before {
-  background-color: #fff;
-  color: #03043c;
-}
-.header-top ul.topbar-support li a i:before {
-  font-size: 2rem;
-  color: #fff;
-  background: transparent;
-  padding: 1rem;
-  margin: 0;
-}
-.header-top ul.topbar-support li a i:hover:before {
-  color: #fff;
-  background: transparent;
-}
-.animated-btn {
-  flex-direction: column;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
-.animated-btn .active {
-  transform: translateY(-0.8rem);
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-}
-.animated-btn .btn-submit {
-  position: absolute;
-  background: chocolate;
-  color: #fff;
-  font-size: 1.6rem;
-  letter-spacing: 0.1px;
-  border-radius: 0.3rem;
-  cursor: pointer;
-  transition: background 0.5s;
-  overflow: hidden;
-}
+
 .footer-area {
   background: #e2f1ff;
   padding-top: 5rem;
